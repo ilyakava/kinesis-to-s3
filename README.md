@@ -27,6 +27,15 @@ Build with [Maven](http://maven.apache.org/). Running
     mvn clean package
 will create a runnable jar at `./target/kinesis-to-s3-[version].jar`
 
+## Deployment on heroku
+
+- push to heroku
+- heroku `config:set AWS_ACCESS_KEY_ID=...` and the same for `AWS_SECRET_ACCESS_KEY`
+- `heroku ps:scale worker=1` to run the "worker" process defined in `Procfile`
+- `heroku logs -t` to verify
+
+References: [running the jar on heroku](https://devcenter.heroku.com/articles/run-non-web-java-processes-on-heroku)
+
 ## Notes
 
 Licensed under the MIT license.
