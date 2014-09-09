@@ -1,1 +1,1 @@
-web:    java $JAVA_OPTS -jar target/kinesis-to-s3-0.2-SNAPSHOT.jar KinesisToS3.properties
+worker: java $JAVA_OPTS -jar target/kinesis-to-s3-0.2-SNAPSHOT.jar KinesisToS3.properties
