@@ -1,6 +1,6 @@
 # kinesis-to-s3
 
-Application for copying Amazon Kinesis data to S3.
+Application for copying Amazon Kinesis data to S3. Updated to work on Heroku.
 
 ## Usage
 
